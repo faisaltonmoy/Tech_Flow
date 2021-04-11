@@ -1,0 +1,74 @@
+.lg{
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.text
+{
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        font-size: 50px;
+        font-weight: bold;
+        color: #f2f2f2;
+        text-shadow: 8px 10px 10px rgb(141, 180, 217);
+        transform: translate(-50%, -50%);
+}
+.lg_frm{
+    min-height: 100vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+ 
+}
+
+.lg_frm form {
+    min-width: 200px;
+    max-width: 350px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 6px;
+    background-color: rgb(141, 180, 217);
+}
+
+.lg_frm .title {
+    margin-bottom: 40px;
+    color: #46505a;
+}
+
+.lg_frm .title h2 {
+    font-weight: 600;
+    text-align: center;
+}
+
+.lg_frm form .form-control {
+    height: 35px;
+    background: whitesmoke;
+    border-radius: 6px;
+}
+
+.lg_frm form textarea {
+    min-height: 100px;
+    max-height: 240px;
+    resize: vertical;
+}
+
+.lg_frm form .btn {
+    padding: 15px 40px;
+    border-width: 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #284c69;
+}
+
+.lg_frm form .btn-primary {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.lg_frm .show {
+    text-align: center;
+    padding-top: 2%;
+}

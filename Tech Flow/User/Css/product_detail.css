@@ -1,0 +1,141 @@
+.container {
+  margin-top: 100px;
+}
+
+.newarrival {
+  background: rgb(88, 207, 88);
+  width: 50px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+}
+.price {
+  color: rgb(50, 80, 100);
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.last-price span {
+  color: #000000;
+  text-decoration: line-through;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+.purchase-info{
+  justify-content: center;
+}
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    outline: 1;
+    height: 40px;
+    margin-top: 13px;
+}
+.purchase-info input{
+  border: 1.5px solid #ddd;
+  border-radius: 25px;
+  text-align: center;
+  outline: 1;
+  height: 33px;
+  width: 80px;
+  background: transparent;
+  
+}
+.purchase-info .btn{
+    cursor: pointer;
+    color: #fff;
+}
+.purchase-info .btn:first-of-type{
+    justify-content: center;
+    background-color: #ffffff;
+    border-color: teal;
+
+}
+.purchase-info .btn:last-of-type{
+  background-color: #ffffff;
+  border-color: teal;
+}
+.purchase-info .btn:hover{
+    opacity: 0.8;
+}
+.long_desc{
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+input {
+  border: 1px solid #ccc;
+  font-weight: bold;
+  height: 33px;
+  width: 50px;
+  text-align: center;
+}
+label {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.cart {
+  color: #ffffff;
+  font-size: 15px;
+  margin-left: 22px;
+  cursor: pointer;
+}
+
+.cart:hover {
+  box-shadow: 2px 4px 4px rgb(162, 202, 176);
+  transform: scale(1.05);
+  color: #fff;
+  cursor: pointer;
+}
+.tail:hover {
+  box-shadow: 2px 4px 4px rgb(55, 163, 91);
+  transform: scale(1.05);
+  color: #fff;
+  cursor: pointer;
+}
+.io {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20px;
+  width: 20px;
+}
+.fiin h6 {
+  margin-top: 2%;
+  font-size: 14px;
+  font-weight: 400;
+}
+.fiin {
+  align-items: center;
+  margin-bottom: 10%;
+  background: white;
+}
+
+.mytable {
+  padding: 15px;
+}
+
+.titlespecification {
+  background: rgb(190, 143, 143);
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.basicinfo h4 {
+  color: rgb(164, 199, 199);
+  text-decoration: underline;
+}
+
+.basicinfo h3 {
+  padding: 20px;
+  margin-bottom: 14px;
+  color: #555;
+  font-weight: bold;
+  font-size: 20px;
+}
+

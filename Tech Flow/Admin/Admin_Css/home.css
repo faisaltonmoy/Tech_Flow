@@ -1,0 +1,114 @@
+.menu:hover{
+    box-shadow: 6px 10px 10px rgb(73, 73, 73);
+    transform: scale(1.05);
+    color: #fff;
+    background: rgb(0, 0, 0);
+}
+.header{
+    background-color: #DEF2F1; 
+    height: 150px;
+}
+.header h1{
+    color: #2B7A78;
+    font-weight: 600;
+}
+.admin_nav a{
+    color: #2B7A78;
+}
+.logout{
+    background-color: #2B7A78;
+    color: white;
+    margin-top: -7px;
+}
+.First{
+    background-color: #f2f2f2;
+}
+.First .row{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.First .row .mobo{
+    background-color:white;
+    height: 520px;
+    width: auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+.mobo:hover{
+    box-shadow: 6px 10px 10px rgb(50, 50, 50);
+    transform: scale(1.05);
+    color: #fff;
+}
+.First .row .mobo .img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 220px;
+    width: 220px;
+}
+.First .row h6{
+    color: black;
+    margin-left: 5%;
+    justify-content: center;
+
+}
+.First .row p{
+    color: black;
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 15px;
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; 
+    -webkit-box-orient: vertical;
+}
+.First .row h4{
+    color: rgb(75, 75, 75);
+    margin-top: 1%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    text-align: end;
+    justify-content: center;
+}
+.tail:hover{
+    box-shadow: 6px 10px 10px rgb(73, 73, 73);
+    transform: scale(1.05);
+    color: #fff;
+}
+.io{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 32px;
+    width: 32px;
+}
+.fiin h6{
+    margin-top: 5%;
+    font-size: 14px;
+    font-weight: 600;
+}
+.fiin{
+    align-items: flex-end;
+    margin-bottom: 10%;
+    background: white;
+}
+.lg_admin{
+    position: relative;
+    justify-content: right;
+}
+.foot{
+    height: 120px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEF2F1;
+}
+.foot h5{
+    margin-top: 2%;
+    font-weight: bold;
+    color: #2B7A78;
+}

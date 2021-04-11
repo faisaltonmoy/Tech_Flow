@@ -1,0 +1,59 @@
+.container{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.container .table th
+{
+    text-align: center;
+    background-color: #46505a;
+    color: whitesmoke;
+}
+.product-thumbnail .show_img{
+  max-width: 80px;
+  max-height: 80px;
+}
+td{
+  text-align: center;
+}
+.product-thumbnail{
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.product-name{
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.product-price{
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.product-quantity{
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.product-subtotal{
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.product-remove{
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
