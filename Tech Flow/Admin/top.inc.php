@@ -60,6 +60,9 @@ else
               <div class="col-lg-offset-2">
                 <h6 class="admin_nav px-2"><a href="user_info.php">User's Info</a></h6>
               </div>
+              <div class="col-lg-offset-2">
+                <h6 class="admin_nav px-2"><a href="news.php">News</a></h6>
+              </div>
               <div class="ml-5 col-lg-offset-2">
                 <a href="logout.php">
                 <button class="logout">Logout</button>

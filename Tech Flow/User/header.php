@@ -181,7 +181,7 @@ if ($mypage == 'contact_us.php') {
 
         <!--NavBar End-->
         <?php
-        $sql = "select * from news order by id desc limit 1";
+        $sql = "select * from news where status = 1";
         $res = mysqli_query($con, $sql);
         $row = mysqli_fetch_assoc($res);
         ?>

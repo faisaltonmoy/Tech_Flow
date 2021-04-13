@@ -41,15 +41,6 @@
     background: whitesmoke;
     border-radius: 6px;
 }
-
-.admin_nav a:link{   
-    background-color: transparent;
-    color: white;
-    padding-left: 0px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
 .img{
     height: 80px;
     width: 80px;

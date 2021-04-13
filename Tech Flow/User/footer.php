@@ -113,12 +113,6 @@
     </script>
 
 
-
-
-    <script src="./assets/js/Chat.js"></script>
-
-    <script src="./app.js"></script>
-
     </body>
 
     </html>
