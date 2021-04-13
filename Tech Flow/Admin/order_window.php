@@ -11,7 +11,7 @@
                                 <h4 class="box-title">Order List</h4>
                             </div>           
                             <div class="table-content table-responsive">
-                                <table class="table">
+                                <table class="table text-center">
                                     <thead>
                                         <tr>
                                             <th class="">Order ID</th>
@@ -25,12 +25,13 @@
                                     </thead>
                                     <tbody>
 										<?php
-                                        $res=mysqli_query($con,"select * from order_user_info");
+                                        $res=mysqli_query($con,"select order_user_info.*, after_order.status 
+                                        from order_user_info INNER join after_order on after_order.id = order_user_info.order_status");
                                         while($row=mysqli_fetch_assoc($res))
                                         {
                                         ?>
 											<tr>
-												<td class="order-id"><a href="order_window_details.php?id=<?php echo $row['id']?>"><?php echo $row['id'] ?></a></td>
+												<td class="order-id"><a name="id" href="order_window_details.php?id=<?php echo $row['id']?>"><?php echo $row['id'] ?></a></td>
 												<td class="time"><?php echo $row['time']?></td>
                                                 <td class="customer_info">
                                                     <?php echo $row['name']?>,</br>
@@ -44,7 +45,7 @@
                                                 </td>
 												<td class="ptype"><?php echo $row['payment_type']?></td>
                                                 <td class="psts"><?php echo $row['payment_status']?></td>
-                                                <td class="osts"><?php echo $row['order_status']?></td>
+                                                <td class="osts"><?php echo $row['status']?></td>
                                                 
 											</tr>
 											<?php } ?>

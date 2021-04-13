@@ -60,7 +60,7 @@ function make_slides($con)
 
 <main>
     <!--CAROUSEL START-->
-    <div class="container-fluid p-0 ">
+    <div class="container-fluid p-0">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
             <ol class="carousel-indicators">
                 <?php echo make_slide_indicators($con); ?>
@@ -79,11 +79,14 @@ function make_slides($con)
             </a>
         </div>
 
-        <!--Top CATEGORIES product Heading-->
-        <div class="row  maintop">
-            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                <h2>New Arrival</h2>
-            </div>
+
+    </div>
+
+    <!--Top CATEGORIES product Heading-->
+
+    <div class="row  maintop">
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <h2>New Arrival</h2>
         </div>
     </div>
 
@@ -191,8 +194,6 @@ function make_slides($con)
 </main>
 
 <!--Main End-->
-
-
 
 
 

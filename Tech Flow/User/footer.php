@@ -6,10 +6,10 @@
                     <h2><a href="home.php">Policies</a> </h2>
                     <div class="content">
                         <p class="ml-3">
-                            <br/><a href="#">Privacy Policy</a><br/>
-                            <a href="#">Warranty Policy</a><br/>
-                            <a href="#">Delivery System</a><br/>
-                            <a href="#">Return, Refund & Replacemnt Policy</a><br/>
+                            <br /><a href="#">Privacy Policy</a><br />
+                            <a href="#">Warranty Policy</a><br />
+                            <a href="#">Delivery System</a><br />
+                            <a href="#">Return, Refund & Replacemnt Policy</a><br />
                             <a href="#">Trems & Conditions</a>
                         </p>
                     </div>
@@ -37,29 +37,27 @@
                     <h2>About us</h2>
                     <div class="content">
                         <p>
-                        We made this website for our CSE 3100 Course. We are Tech Flow, 
-                        and we are here to help you with all your technology needs.
-                        Our aim is to provide all the requirements of 
-                        our customers and help them satisfy their needs, wants, and desires.
+                            We made this website for our CSE 3100 Course. We are Tech Flow,
+                            and we are here to help you with all your technology needs.
+                            Our aim is to provide all the requirements of
+                            our customers and help them satisfy their needs, wants, and desires.
                         </p>
                         <div class="social text-right">
-                            <a href="https://www.facebook.com/apon.saha.3705/"><span
-                                    class="fab fa-facebook-f"></span></a>
+                            <a href="https://www.facebook.com/apon.saha.3705/"><span class="fab fa-facebook-f"></span></a>
                             <a href="#"><span class="fab fa-twitter"></span></a>
-                            <a href="https://www.instagram.com/atanu.saha.1997/"><span
-                                    class="fab fa-instagram"></span></a>
-                            <a href="https://youtube.com/channel/UC7LLDvNkib8a8ImkebxQWrw"><span
-                                    class="fab fa-youtube"></span></a>
+                            <a href="https://www.instagram.com/atanu.saha.1997/"><span class="fab fa-instagram"></span></a>
+                            <a href="https://youtube.com/channel/UC7LLDvNkib8a8ImkebxQWrw"><span class="fab fa-youtube"></span></a>
                         </div>
                     </div>
                 </div>
 
             </div>
 
+
             <div class="bottom">
                 <center>
                     <span class="credit">Created By Tech Flow | </span>
-                    <span class="far fa-copyright"></span><span> <?php echo date('Y')?> All rights reserved.</span>
+                    <span class="far fa-copyright"></span><span> <?php echo date('Y') ?> All rights reserved.</span>
                 </center>
             </div>
         </div>
@@ -90,16 +88,11 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
 
 
     <script>
-
         $('.owl-carousel').owlCarousel({
             loop: false,
             margin: 10,
@@ -118,6 +111,14 @@
             }
         })
     </script>
-</body>
 
-</html>
+
+
+
+    <script src="./assets/js/Chat.js"></script>
+
+    <script src="./app.js"></script>
+
+    </body>
+
+    </html>

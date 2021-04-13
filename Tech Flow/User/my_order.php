@@ -21,6 +21,7 @@ if(!isset($_SESSION['name']))
                                     <th class="">Product Name</th>
                                     <th class="">Quantity</th>
                                     <th class="">Price</th>
+                                    <th class="">Total</th>
                                     <th class="">Product Status</th>
                                     <th class="">Order Status</th>
                                 </tr>
@@ -36,9 +37,11 @@ if(!isset($_SESSION['name']))
                                         $email = $row['email'];
                                     }
                                 }
-                                $sql = "SELECT product.name, order_details.qty, order_details.price, order_user_info.payment_status,order_user_info.order_status,order_user_info.total_price
+                                $sql = "SELECT product.name, order_details.qty, order_details.price,order_user_info.payment_status,after_order.status,order_user_info.total_price
                                 from product inner join order_details on product.id = order_details.product_id
-                                INNER JOIN order_user_info on order_user_info.id = order_details.order_id WHERE order_user_info.email = '$email'";
+                                INNER JOIN order_user_info on order_user_info.id = order_details.order_id 
+                                INNER join after_order on after_order.id = order_user_info.order_status
+                                WHERE order_user_info.email = '$email'";
                                 $res = mysqli_query($con, $sql);
                                 while ($row = mysqli_fetch_assoc($res)) {
                                 ?>
@@ -46,20 +49,13 @@ if(!isset($_SESSION['name']))
                                         <td class=""><?php echo $row['name'] ?></td>         
                                         <td class=""><?php echo $row['qty'] ?></td>
                                         <td class=""><?php echo $row['price'] ?></td>
+                                        <td class=""><?php echo $row['qty'] * $row['price'] ?></td>
                                         <td class=""><?php echo $row['payment_status'] ?></td>
-                                        <td class=""><?php echo $row['order_status'] ?></td>
+                                        <td class=""><?php echo $row['status'] ?></td>
                                     </tr>
-
-
-                                    <?php $toral += $row['qty'] * $row['price'] ?>
-
                                 <?php } ?>
                             </tbody>
                         </table>
-                        <div class="col-12 text-right">
-                            </br></br><h4>Total price
-                                &nbsp;&nbsp;<b><?php echo $toral ?></b></h4>
-                        </div>
                     </div>
                 </form>
             </div>

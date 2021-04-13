@@ -13,6 +13,8 @@ if (!isset($_SESSION['cart']) || count($_SESSION['cart']) == 0) {
 }
 $name = "";
 $email = "";
+$dis = 0;
+$discount = 0;
 if (isset($_SESSION['name'])) {
     $sql = "select name,email from user_sign_up where name = '$_SESSION[name]'";
     $res = mysqli_query($con, $sql);
@@ -20,6 +22,8 @@ if (isset($_SESSION['name'])) {
         $name = $row['name'];
         $email = $row['email'];
     }
+    $dis = 0.02;
+    $discount = 2;
 }
 
 $total = 0;
@@ -45,7 +49,7 @@ if (isset($_POST['submit'])) {
     if ($payment_type == 'cod') {
         $payment_status = 'Pending';
     }
-    $order_status = 'Pending';
+    $order_status = 1;
 
     $sql = "insert into `order_user_info` (name,email,address,city,state,zip,payment_type,total_price,payment_status,order_status)
         values('$name','$email','$address','$city','$state','$zip','$payment_type','$total_price','$payment_status','$order_status')";
@@ -157,15 +161,23 @@ if (isset($_POST['submit'])) {
 
                     </tbody>
                 </table>
+                
+                <div class="row">
+                    <div class="col-50 ml-4">
+                        <h5><b>Discount</b></h5>
+                    </div>
+                    <div class="col-25 ml-5">
+                        <p><b>&emsp;&emsp;&nbsp;&emsp;<?php echo $discount?>%</b></p>
+                    </div>
+                </div>
 
                 <div class="row">
                     <div class="col-50 ml-5">
                         <h5><b>Total</b></h5>
                     </div>
                     <div class="col-25 ml-5">
-                        <p><b>৳ <?php echo $total ?></b></p>
+                        <p><b>৳ <?php echo $total-($total*$dis) ?></b></p>
                     </div>
-
                 </div>
 
             </div>
