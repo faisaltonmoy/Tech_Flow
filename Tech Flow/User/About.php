@@ -41,10 +41,10 @@ require('header.php');
                                     </h3>
 
                                     <div class="social">
-                                        <a href="https://www.facebook.com/apon.saha.3705/"><span class="fab fa-facebook-f"></span></a>
+                                        <a href="https://www.facebook.com/"><span class="fab fa-facebook-f"></span></a>
 
-                                        <a href="https://www.instagram.com/atanu.saha.1997/"><span class="fab fa-instagram"></span></a>
-                                        <a href="https://youtube.com/channel/UC7LLDvNkib8a8ImkebxQWrw"><span class="fab fa-youtube"></span></a>
+                                        <a href="https://www.instagram.com/"><span class="fab fa-instagram"></span></a>
+                                        <a href="https://youtube.com/"><span class="fab fa-youtube"></span></a>
                                     </div>
 
 
@@ -87,10 +87,10 @@ require('header.php');
                                     </h3>
 
                                     <div class="social">
-                                        <a href="https://www.facebook.com/mahin.opu.733"><span class="fab fa-facebook-f"></span></a>
+                                        <a href="https://www.facebook.com/"><span class="fab fa-facebook-f"></span></a>
 
                                         <a href="#"><span class="fab fa-instagram"></span></a>
-                                        <a href="https://youtube.com/channel/UC7LLDvNkib8a8ImkebxQWrw"><span class="fab fa-youtube"></span></a>
+                                        <a href="https://youtube.com/"><span class="fab fa-youtube"></span></a>
                                     </div>
 
 
@@ -133,10 +133,10 @@ require('header.php');
                                     </h3>
 
                                     <div class="social">
-                                        <a href="https://www.facebook.com/faisal.ahmmed.tonmoy"><span class="fab fa-facebook-f"></span></a>
+                                        <a href="https://www.facebook.com/"><span class="fab fa-facebook-f"></span></a>
 
                                         <a href="#"><span class="fab fa-instagram"></span></a>
-                                        <a href="https://youtube.com/channel/UC7LLDvNkib8a8ImkebxQWrw"><span class="fab fa-youtube"></span></a>
+                                        <a href="https://youtube.com/"><span class="fab fa-youtube"></span></a>
                                     </div>
 
 

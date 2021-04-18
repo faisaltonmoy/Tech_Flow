@@ -53,7 +53,7 @@
                                        <td class="serial"><?php echo $i?></td>
                                        <td><?php echo $row['id']?></td>
                                        <td><?php echo $row['name']?></td>
-                                       <td><img class="img" src="../PIC/<?php echo $row["image"]?>"/></td>
+                                       <td><img class="img" src="../PIC/carousel<?php echo $row["image"]?>"/></td>
                                        <td><?php
                                        if($row['status']==1){
                                          echo "<span class='badge badge-complete'><a href='?type=status&operation=deactive&id=".$row['id']."'>Active</a></span>&nbsp";

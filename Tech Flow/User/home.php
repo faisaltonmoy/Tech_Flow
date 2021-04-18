@@ -40,7 +40,7 @@ function make_slides($con)
             $output .= '<div class="carousel-item">';
         }
         $output .= '
-   <img class="d-block w-100" src="PIC/' . $row["image"] . '" alt="' . $row["name"] . '" />
+   <img class="d-block w-100" src="../PIC/carousel' . $row["image"] . '" alt="' . $row["name"] . '" />
    <div class="carousel-caption d-none d-md-block d-sm-block">
     <h3 class="sub-heading animate__animated animate__rotateIn delay-2s">' . $row["name"] . '</h3>
    </div>
@@ -109,7 +109,7 @@ function make_slides($con)
                             </a>
                             <ul class="social">
                                 <li>
-                                    <a href="product_details.php?id=<?php echo $get_product['0']['id'] ?>" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                    <a href="product_details.php?id=<?php echo $list['id'] ?>" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
                                 </li>
                                 <li>
                                     <a href="#" data-tip="Wishlist"><i class="fa fa-heart"></i></a>

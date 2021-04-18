@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
         if (isset($_GET['id']) && $_GET['id'] != '') {
             if ($_FILES['image']['name'] != '') {
                 $image =$_FILES['image']['name'];
-                move_uploaded_file($_FILES['image']['tmp_name'],'../PIC/'.$image);
+                move_uploaded_file($_FILES['image']['tmp_name'],'../PIC/carousel'.$image);
                 
                 $up_sql = "Update carousel set name='$name', image='$image'  where id='$id'";
             } else {
@@ -55,8 +55,8 @@ if (isset($_POST['submit'])) {
             }
             mysqli_query($con, $up_sql);
         } else {
-            $image =$_FILES['image']['name'];
-            move_uploaded_file($_FILES['image']['tmp_name'],'../PIC/'.$image);
+            $image = $_FILES['image']['name'];
+            move_uploaded_file($_FILES['image']['tmp_name'],'../PIC/carousel'.$image);
             $add_sql = "insert into carousel(name,image,status) 
                         VALUES ('$name','$image',1)";
             $res = mysqli_query($con, $add_sql);

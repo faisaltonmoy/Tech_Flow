@@ -54,7 +54,7 @@ if (isset($_POST['submit'])) {
                     <h2>Add News</h2>
                 </div>
                 <div class="form-group py-3">
-                    <input class="form-control w-50" type="text" name="message" placeholder="News" required="required" value="<?php echo $catagories ?>"></input>
+                    <textarea class="form-control w-50" type="text" name="message" placeholder="News" required="required" value="<?php echo $catagories ?>"></textarea>
                 </div>
                 <div class="form-group">
                     <button class="btn btn-primary w-15" type="submit" name="submit">Submit</button>

@@ -109,20 +109,22 @@ if ($mypage == 'contact_us.php') {
                             <?php
                             foreach ($cat_dt_arr as $list) {
                             ?>
-                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="catagories.php?id=<?php echo $list['id'] ?>" data-toggle="">
+                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                                         <?php echo $list['catagories'] ?></a>
                                     <?php
                                     $cat_id = $list['id'];
                                     $sub_cat_res = mysqli_query($con, "select * from sub_catagories where status='1' and catagories_id='$cat_id'");
                                     if (mysqli_num_rows($sub_cat_res) > 0) {
                                     ?>
-
                                         <ul class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
                                             <?php
                                             while ($sub_cat_rows = mysqli_fetch_assoc($sub_cat_res)) {
                                                 echo '<li><a class="dropdown-item" href="catagories.php?id=' . $list['id'] . '&sub_catagories=' . $sub_cat_rows['id'] . '">' . $sub_cat_rows['sub_catagories'] . '</a></li>';
                                             }
                                             ?>
+                                            <li class="dropdown-menu mega-menu">
+                                                <a class="dropdown-item" href="catagories.php?id=<?php echo $list['id'] ?>">All <?php echo $list['catagories'] ?></a>
+                                            </li>
                                         </ul>
                                     <?php } ?>
                                 </li>
@@ -187,7 +189,7 @@ if ($mypage == 'contact_us.php') {
         ?>
         <div class="sliding_text_wrap " style="background-color: rgba(2, 12, 20, 0.8)">
             <marquee direction="left" style="color: #fa8729">
-                <?php echo $row['message']?>
+                <?php echo $row['message'] ?>
             </marquee>
         </div>
 
