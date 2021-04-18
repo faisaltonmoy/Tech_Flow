@@ -12,3 +12,7 @@ Languages:
 3) BOOTSTRAP 3
 4) PHP
 5) MySQL
+
+Software used to build:
+VS Code
+XAMPP
