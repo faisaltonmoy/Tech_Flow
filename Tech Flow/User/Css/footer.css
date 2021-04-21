@@ -67,7 +67,7 @@
     transition: 0.3s;
   }
   .left .content .social a span:hover{
-    background: #ffffff;
+    background: #2B7A78;
   }
 
   .center .content .fas{
@@ -100,6 +100,20 @@
   }
   .bottom center span{
     color: #beb4b4;
+  }
+
+  .goTop{
+    position: fixed;
+    background-color: #2B7A78;
+    border-radius: 3px;
+    color: #DEF2F1;
+    width: 43px;
+    height: 43px;
+    right: 15px;
+    bottom: 15px;
+    text-align: center;
+    font-size: 25px;
+    display: none;
   }
   
   @media screen and (max-width: 900px) {

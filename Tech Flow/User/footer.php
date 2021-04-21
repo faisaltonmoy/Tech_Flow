@@ -68,7 +68,9 @@
 
     <!--Footer End-->
 
-
+    <a href="javascript:void(0)" class="goTop">
+        <i class="fa fa-chevron-up" style="color:#DEF2F1"></i>
+    </a>
 
 
 

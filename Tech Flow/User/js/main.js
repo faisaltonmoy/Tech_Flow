@@ -17,6 +17,19 @@ function manage_cart(pid,type){
 	});	
 }
 
+$(window).scroll(function(){
+	if($(this).scrollTop()>400)
+		{
+			$('.goTop').fadeIn();
+		}else{
+			$('.goTop').fadeOut();
+		}
+});
+
+$('.goTop').click(function(){
+	$('html, body').animate({scrollTop:0},2000)
+});
+
 function sort_product_all(){
 	var sort_product_id= jQuery('#sort_product_id_all').val();
 	window.location.href="http://localhost/Tech%20Flow/User/catagories.php?id=any"+"&sort="+sort_product_id;
